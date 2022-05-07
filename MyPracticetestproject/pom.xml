@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>MyPracticetestproject</groupId>
+  <artifactId>MyPracticetestproject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  
+  <dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.2</version>
+</dependency>
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.1.3</version>
+</dependency>
+  <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.3.0</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.2.3</version>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>7.2.3</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>net.sourceforge.tess4j</groupId>
+    <artifactId>tess4j</artifactId>
+    <version>4.5.4</version>
+</dependency>
+
+
+  
+  </dependencies>
+  
+  <build>
+  
+  
+  <plugins>
+   
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M6</version>
+        <configuration>
+         <!-- <includes>
+        <include>Alertsdemo</include>
+        </includes> -->  
+          <!-- <suiteXmlFiles>
+            <suiteXmlFile>${testngFile}</suiteXmlFile>
+          </suiteXmlFiles> -->
+             <suiteXmlFiles>
+            <suiteXmlFile>testngdtep.xml</suiteXmlFile>
+          </suiteXmlFiles> 
+        </configuration>
+      </plugin>
+   
+</plugins>
+ 
+  
+  </build>
+  
+</project>

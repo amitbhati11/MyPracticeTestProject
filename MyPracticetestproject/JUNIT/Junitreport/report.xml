@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="71.979">
+<testcase classname="Unknown" name="verify with valid credentasils" time="23.661">
+<system-out><![CDATA[Given enter login url.......................................................passed
+And verify with valid credentasils enter amit and 12345.....................passed
+When click on login button..................................................passed
+Then navigate to home page..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="verify with valid credentasils 2" time="23.553">
+<system-out><![CDATA[Given enter login url.......................................................passed
+And verify with valid credentasils enter Ravi and 12345.....................passed
+When click on login button..................................................passed
+Then navigate to home page..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="verify with invalid credentasils" time="24.48">
+<system-out><![CDATA[Given enter login url.......................................................passed
+And verify with invalid credentasils enter sourav and 123456................passed
+When click on login button..................................................passed
+Then navigate to home page..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
