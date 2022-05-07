@@ -36,14 +36,28 @@
 </dependency>
 
 <dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>4.4.0</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+
+
+<dependency>
     <groupId>net.sourceforge.tess4j</groupId>
     <artifactId>tess4j</artifactId>
     <version>4.5.4</version>
 </dependency>
 
+</dependencies>
 
-  
-  </dependencies>
+
   
   <build>
   
@@ -62,7 +76,7 @@
             <suiteXmlFile>${testngFile}</suiteXmlFile>
           </suiteXmlFiles> -->
              <suiteXmlFiles>
-            <suiteXmlFile>testngdtep.xml</suiteXmlFile>
+            <suiteXmlFile>testngrail.xml</suiteXmlFile>
           </suiteXmlFiles> 
         </configuration>
       </plugin>

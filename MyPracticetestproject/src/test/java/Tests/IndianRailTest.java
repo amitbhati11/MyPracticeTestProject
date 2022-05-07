@@ -107,7 +107,7 @@ public class IndianRailTest {
 	ITesseract imges=new Tesseract();
 	String imgtxt=imges.doOCR(new File(path));
 	System.out.println(imgtxt);
-	
+	//regex
 	String S=imgtxt.split("[0-9]+\\+-[0-9]*")[0];
 	System.out.println(S);
 		String S1=imgtxt.split("[0-9]+")[0];
