@@ -36,11 +36,11 @@ public class Reqputpatchndeletemethods {
 	
 	public void patchmethod(String name,String job) {
 		baseURI="https://reqres.in";
-		JSONObject rp=new JSONObject();
-		rp.put("name", name);
-		rp.put("job", job);
+		JSONObject rph=new JSONObject();
+		rph.put("name", name);
+		rph.put("job", job);
 		
-		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(rp.toJSONString()).when().patch("/api/users/2").
+		given().contentType(ContentType.JSON).accept(ContentType.JSON).body(rph.toJSONString()).when().patch("/api/users/2").
 		then().statusCode(200).log().all();
 	}
 	
